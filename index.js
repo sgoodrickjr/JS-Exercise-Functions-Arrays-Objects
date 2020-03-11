@@ -35,8 +35,8 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(Hannah) {
-  return 'Goodbye, ' + Hannah + '. Have a great day.';
+function sayGoodbye(name) {
+  return `Goodbye, ${name}. Have a great day.`;
 }
 
 
@@ -55,10 +55,9 @@ function sayGoodbye(Hannah) {
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
 function temperatureCtoF(t) {
-  t=24;
   return Math.round(t*9/5 + 32);
 }
-
+temperatureCtoF(24);
 
 /**
  * ### Challenge `temperatureInF`
@@ -77,10 +76,11 @@ function temperatureCtoF(t) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF() {
+  
 }
-
+temperatureInF(88, 'F');
+temperatureInF(24, 'C');
 
 /**
  * ### Challenge `makePersonObject`
