@@ -76,8 +76,8 @@ temperatureCtoF(24);
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF() {
-  
+function temperatureInF(a, b) {
+  return a + b;
 }
 temperatureInF(88, 'F');
 temperatureInF(24, 'C');
