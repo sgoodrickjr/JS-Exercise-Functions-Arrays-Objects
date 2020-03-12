@@ -76,11 +76,20 @@ temperatureCtoF(24);
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(a, b) {
-  return a + b;
+function temperatureInF(temp, scale) {
+  
+  if (scale == 'F') {
+    return temp + scale;
+  }
+  else {
+   
+    return temperatureCtoF(temp) + 'F';
+  }
+
+
 }
 temperatureInF(88, 'F');
-temperatureInF(24, 'C');
+temperatureCtoF(24, 'C');
 
 /**
  * ### Challenge `makePersonObject`
